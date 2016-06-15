@@ -21,20 +21,20 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_d229fb4338d27e2fb080ce5c773c4087928f2ffd51320870fcffcf2721743673 = $this->env->getExtension("native_profiler");
-        $__internal_d229fb4338d27e2fb080ce5c773c4087928f2ffd51320870fcffcf2721743673->enter($__internal_d229fb4338d27e2fb080ce5c773c4087928f2ffd51320870fcffcf2721743673_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/myAccount.html.twig"));
+        $__internal_a2a683d10e3af0fb6cfa9dd8e3d9cbb3d40c4ff1df595ae881097309cbaf10ac = $this->env->getExtension("native_profiler");
+        $__internal_a2a683d10e3af0fb6cfa9dd8e3d9cbb3d40c4ff1df595ae881097309cbaf10ac->enter($__internal_a2a683d10e3af0fb6cfa9dd8e3d9cbb3d40c4ff1df595ae881097309cbaf10ac_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/myAccount.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_d229fb4338d27e2fb080ce5c773c4087928f2ffd51320870fcffcf2721743673->leave($__internal_d229fb4338d27e2fb080ce5c773c4087928f2ffd51320870fcffcf2721743673_prof);
+        $__internal_a2a683d10e3af0fb6cfa9dd8e3d9cbb3d40c4ff1df595ae881097309cbaf10ac->leave($__internal_a2a683d10e3af0fb6cfa9dd8e3d9cbb3d40c4ff1df595ae881097309cbaf10ac_prof);
 
     }
 
     // line 2
     public function block_body($context, array $blocks = array())
     {
-        $__internal_cfbab25d687bf8c303ec82c8d3f063260f86a592de5c9604fd3ad7ca16623a85 = $this->env->getExtension("native_profiler");
-        $__internal_cfbab25d687bf8c303ec82c8d3f063260f86a592de5c9604fd3ad7ca16623a85->enter($__internal_cfbab25d687bf8c303ec82c8d3f063260f86a592de5c9604fd3ad7ca16623a85_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_8ee249c61d61574048340900a24708c32dfb9b43e07119d8f13310ba79372352 = $this->env->getExtension("native_profiler");
+        $__internal_8ee249c61d61574048340900a24708c32dfb9b43e07119d8f13310ba79372352->enter($__internal_8ee249c61d61574048340900a24708c32dfb9b43e07119d8f13310ba79372352_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 3
         echo "    <body>
@@ -235,71 +235,22 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
             </div>
             <div class=\"row\">
                 <div class=\"gallery-holder\">
-                    <div class=\"col-md-3 col-sm-6 col-xs-12 gallery-item\">
-                        <div class=\"gallery-thumb\">
-                            <img src=\"img/1.jpg\" alt=\"\">
-                            <div class=\"hover\">
-                                <a href=\"#\" class=\"fa fa-plus\"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\"col-md-3 col-sm-6 col-xs-12 gallery-item\">
-                        <div class=\"gallery-thumb\">
-                            <img src=\"img/2.jpg\" alt=\"\">
-                            <div class=\"hover\">
-                                <a href=\"#\" class=\"fa fa-plus\"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\"col-md-3 col-sm-6 col-xs-12 gallery-item\">
-                        <div class=\"gallery-thumb\">
-                            <img src=\"img/3.jpg\" alt=\"\">
-                            <div class=\"hover\">
-                                <a href=\"#\" class=\"fa fa-plus\"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\"col-md-3 col-sm-6 col-xs-12 gallery-item\">
-                        <div class=\"gallery-thumb\">
-                            <img src=\"img/4.jpg\" alt=\"\">
-                            <div class=\"hover\">
-                                <a href=\"#\" class=\"fa fa-plus\"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\"col-md-3 col-sm-6 col-xs-12 gallery-item\">
-                        <div class=\"gallery-thumb\">
-                            <img src=\"img/5.jpg\" alt=\"\">
-                            <div class=\"hover\">
-                                <a href=\"#\" class=\"fa fa-plus\"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\"col-md-3 col-sm-6 col-xs-12 gallery-item\">
-                        <div class=\"gallery-thumb\">
-                            <img src=\"img/6.jpg\" alt=\"\">
-                            <div class=\"hover\">
-                                <a href=\"#\" class=\"fa fa-plus\"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\"col-md-3 col-sm-6 col-xs-12 gallery-item\">
-                        <div class=\"gallery-thumb\">
-                            <img src=\"img/7.jpg\" alt=\"\">
-                            <div class=\"hover\">
-                                <a href=\"#\" class=\"fa fa-plus\"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\"col-md-3 col-sm-6 col-xs-12 gallery-item\">
-                        <div class=\"gallery-thumb\">
-                            <img src=\"img/8.jpg\" alt=\"\">
-                            <div class=\"hover\">
-                                <a href=\"#\" class=\"fa fa-plus\"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    ";
+        // line 179
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["data1"]) ? $context["data1"] : $this->getContext($context, "data1")));
+        foreach ($context['_seq'] as $context["_key"] => $context["user"]) {
+            // line 180
+            echo "                        <li>";
+            echo $context["user"];
+            echo "</li>
+                    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['user'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 182
+        echo "                </div>
             </div>
         </div>
     </section>
@@ -341,7 +292,7 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
                 <div class=\"col-md-3 col-sm-12\">
                     <div class=\"contact-info\">
                         <h4>Contact Information</h4>
-                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius aliquam diam, ac cursus enim. Ut interdum leo mattis varius pulvinar.</p>
                         <ul class=\"social-icons\">
                             <li><a href=\"#\" class=\"fa fa-facebook\"></a></li>
                             <li><a href=\"#\" class=\"fa fa-twitter\"></a></li>
@@ -368,7 +319,7 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
     </body>
 ";
         
-        $__internal_cfbab25d687bf8c303ec82c8d3f063260f86a592de5c9604fd3ad7ca16623a85->leave($__internal_cfbab25d687bf8c303ec82c8d3f063260f86a592de5c9604fd3ad7ca16623a85_prof);
+        $__internal_8ee249c61d61574048340900a24708c32dfb9b43e07119d8f13310ba79372352->leave($__internal_8ee249c61d61574048340900a24708c32dfb9b43e07119d8f13310ba79372352_prof);
 
     }
 
@@ -384,7 +335,7 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
 
     public function getDebugInfo()
     {
-        return array (  201 => 143,  197 => 142,  182 => 130,  178 => 129,  174 => 128,  165 => 123,  153 => 114,  40 => 3,  34 => 2,  11 => 1,);
+        return array (  253 => 182,  244 => 180,  240 => 179,  201 => 143,  197 => 142,  182 => 130,  178 => 129,  174 => 128,  165 => 123,  153 => 114,  40 => 3,  34 => 2,  11 => 1,);
     }
 }
 /* {% extends 'base.html.twig' %}*/
@@ -565,70 +516,9 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
 /*             </div>*/
 /*             <div class="row">*/
 /*                 <div class="gallery-holder">*/
-/*                     <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">*/
-/*                         <div class="gallery-thumb">*/
-/*                             <img src="img/1.jpg" alt="">*/
-/*                             <div class="hover">*/
-/*                                 <a href="#" class="fa fa-plus"></a>*/
-/*                             </div>*/
-/*                         </div>*/
-/*                     </div>*/
-/*                     <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">*/
-/*                         <div class="gallery-thumb">*/
-/*                             <img src="img/2.jpg" alt="">*/
-/*                             <div class="hover">*/
-/*                                 <a href="#" class="fa fa-plus"></a>*/
-/*                             </div>*/
-/*                         </div>*/
-/*                     </div>*/
-/*                     <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">*/
-/*                         <div class="gallery-thumb">*/
-/*                             <img src="img/3.jpg" alt="">*/
-/*                             <div class="hover">*/
-/*                                 <a href="#" class="fa fa-plus"></a>*/
-/*                             </div>*/
-/*                         </div>*/
-/*                     </div>*/
-/*                     <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">*/
-/*                         <div class="gallery-thumb">*/
-/*                             <img src="img/4.jpg" alt="">*/
-/*                             <div class="hover">*/
-/*                                 <a href="#" class="fa fa-plus"></a>*/
-/*                             </div>*/
-/*                         </div>*/
-/*                     </div>*/
-/*                     <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">*/
-/*                         <div class="gallery-thumb">*/
-/*                             <img src="img/5.jpg" alt="">*/
-/*                             <div class="hover">*/
-/*                                 <a href="#" class="fa fa-plus"></a>*/
-/*                             </div>*/
-/*                         </div>*/
-/*                     </div>*/
-/*                     <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">*/
-/*                         <div class="gallery-thumb">*/
-/*                             <img src="img/6.jpg" alt="">*/
-/*                             <div class="hover">*/
-/*                                 <a href="#" class="fa fa-plus"></a>*/
-/*                             </div>*/
-/*                         </div>*/
-/*                     </div>*/
-/*                     <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">*/
-/*                         <div class="gallery-thumb">*/
-/*                             <img src="img/7.jpg" alt="">*/
-/*                             <div class="hover">*/
-/*                                 <a href="#" class="fa fa-plus"></a>*/
-/*                             </div>*/
-/*                         </div>*/
-/*                     </div>*/
-/*                     <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">*/
-/*                         <div class="gallery-thumb">*/
-/*                             <img src="img/8.jpg" alt="">*/
-/*                             <div class="hover">*/
-/*                                 <a href="#" class="fa fa-plus"></a>*/
-/*                             </div>*/
-/*                         </div>*/
-/*                     </div>*/
+/*                     {% for user in data1 %}*/
+/*                         <li>{{ user|raw }}</li>*/
+/*                     {% endfor %}*/
 /*                 </div>*/
 /*             </div>*/
 /*         </div>*/
@@ -671,7 +561,7 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
 /*                 <div class="col-md-3 col-sm-12">*/
 /*                     <div class="contact-info">*/
 /*                         <h4>Contact Information</h4>*/
-/*                         */
+/*                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius aliquam diam, ac cursus enim. Ut interdum leo mattis varius pulvinar.</p>*/
 /*                         <ul class="social-icons">*/
 /*                             <li><a href="#" class="fa fa-facebook"></a></li>*/
 /*                             <li><a href="#" class="fa fa-twitter"></a></li>*/

@@ -123,6 +123,7 @@ class AccountController extends Controller
 
         $user = $this->getUser();
         $currentUserId=$user->getId();
+        $currentUser=$user->getUsername();
         try{
             $account = $this->getDoctrine()
                 ->getRepository('AppBundle:Account')
@@ -139,9 +140,32 @@ class AccountController extends Controller
 
         }
 
+        //make post window
+        $em=$this->getDoctrine()->getEntityManager();
+        $connection=$em->getConnection();
+        $statement = $connection->prepare("SELECT id FROM posts WHERE owner = :id");
+        $statement->bindValue('id', $currentUser);
+        $statement->execute();
+        $results = $statement->fetchAll();
+        //var_dump($results);
+        $output=array();
+        foreach ($results as $value) {
+            $post=$this->getDoctrine()
+                ->getRepository('AppBundle:Post')
+                ->find($value);
+            $html='<div class="col-md-4 about-left"><figure class="effect-bubba">
+						<img class="img-responsive" src="/uploads/images/'.$post->getImage().'" alt="this is a test!"/>
+						<figcaption>
+							<h2>'.$post->getTitle().'</h2>
+							<p>'.$post->getDescription().'</p>
+						</figcaption>
+					</figure></div>';
+            array_push($output,$html);
+        }
+
         return $this->render('default/myAccount.html.twig', array(
             'base_dir' => realpath($this->container->getParameter('kernel.root_dir').'/..'), 'data'=>array('business_name'=>$businessName,'description'=>$description,'profile_picture'=>$profilePic,'cover_picture'=>$coverPic
-            ,'vision'=>$vision,'category'=>$category,'address'=>$address,'contact'=>$contact),
+            ,'vision'=>$vision,'category'=>$category,'address'=>$address,'contact'=>$contact),'data1'=>$output
         ));
 
 

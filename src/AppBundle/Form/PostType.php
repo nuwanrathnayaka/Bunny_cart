@@ -7,6 +7,9 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
 use Symfony\Component\Form\Extension\Core\Type\FileType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+
 
 class PostType extends AbstractType
 {
@@ -17,10 +20,10 @@ class PostType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('title')
-            ->add('price')
-            ->add('description')
-            ->add('category')
+            ->add('title',TextType::class, array('label'=>'Business Name:' , 'attr'=>array('class'=>"form-control",'placeholder'=>'Post Title' )))
+            ->add('price',TextType::class, array('label'=>'Business Name:' , 'attr'=>array('class'=>"form-control",'placeholder'=>'price' )))
+            ->add('description',TextareaType::class,array('label'=>'Address:' , 'attr'=>array('class'=>"form-control",'rows'=>5,'placeholder'=>'Enter Address' )))
+            ->add('category',TextType::class, array('label'=>'Business Name:' , 'attr'=>array('class'=>"form-control",'placeholder'=>'Category' )))
             ->add('image',FileType::class)
         ;
     }

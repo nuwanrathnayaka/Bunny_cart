@@ -176,70 +176,9 @@
             </div>
             <div class="row">
                 <div class="gallery-holder">
-                    <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
-                        <div class="gallery-thumb">
-                            <img src="img/1.jpg" alt="">
-                            <div class="hover">
-                                <a href="#" class="fa fa-plus"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
-                        <div class="gallery-thumb">
-                            <img src="img/2.jpg" alt="">
-                            <div class="hover">
-                                <a href="#" class="fa fa-plus"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
-                        <div class="gallery-thumb">
-                            <img src="img/3.jpg" alt="">
-                            <div class="hover">
-                                <a href="#" class="fa fa-plus"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
-                        <div class="gallery-thumb">
-                            <img src="img/4.jpg" alt="">
-                            <div class="hover">
-                                <a href="#" class="fa fa-plus"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
-                        <div class="gallery-thumb">
-                            <img src="img/5.jpg" alt="">
-                            <div class="hover">
-                                <a href="#" class="fa fa-plus"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
-                        <div class="gallery-thumb">
-                            <img src="img/6.jpg" alt="">
-                            <div class="hover">
-                                <a href="#" class="fa fa-plus"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
-                        <div class="gallery-thumb">
-                            <img src="img/7.jpg" alt="">
-                            <div class="hover">
-                                <a href="#" class="fa fa-plus"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 gallery-item">
-                        <div class="gallery-thumb">
-                            <img src="img/8.jpg" alt="">
-                            <div class="hover">
-                                <a href="#" class="fa fa-plus"></a>
-                            </div>
-                        </div>
-                    </div>
+                    {% for user in data1 %}
+                        <li>{{ user|raw }}</li>
+                    {% endfor %}
                 </div>
             </div>
         </div>
@@ -282,7 +221,7 @@
                 <div class="col-md-3 col-sm-12">
                     <div class="contact-info">
                         <h4>Contact Information</h4>
-
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius aliquam diam, ac cursus enim. Ut interdum leo mattis varius pulvinar.</p>
                         <ul class="social-icons">
                             <li><a href="#" class="fa fa-facebook"></a></li>
                             <li><a href="#" class="fa fa-twitter"></a></li>
