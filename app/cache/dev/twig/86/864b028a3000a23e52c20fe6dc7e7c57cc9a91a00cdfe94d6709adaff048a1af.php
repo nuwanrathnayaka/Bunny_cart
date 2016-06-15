@@ -21,20 +21,20 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_7cc4682fdd3ec11ee5eedb45641a05883a23fe721df3a41b64e78e9e85ab3573 = $this->env->getExtension("native_profiler");
-        $__internal_7cc4682fdd3ec11ee5eedb45641a05883a23fe721df3a41b64e78e9e85ab3573->enter($__internal_7cc4682fdd3ec11ee5eedb45641a05883a23fe721df3a41b64e78e9e85ab3573_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/myAccount.html.twig"));
+        $__internal_d229fb4338d27e2fb080ce5c773c4087928f2ffd51320870fcffcf2721743673 = $this->env->getExtension("native_profiler");
+        $__internal_d229fb4338d27e2fb080ce5c773c4087928f2ffd51320870fcffcf2721743673->enter($__internal_d229fb4338d27e2fb080ce5c773c4087928f2ffd51320870fcffcf2721743673_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/myAccount.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_7cc4682fdd3ec11ee5eedb45641a05883a23fe721df3a41b64e78e9e85ab3573->leave($__internal_7cc4682fdd3ec11ee5eedb45641a05883a23fe721df3a41b64e78e9e85ab3573_prof);
+        $__internal_d229fb4338d27e2fb080ce5c773c4087928f2ffd51320870fcffcf2721743673->leave($__internal_d229fb4338d27e2fb080ce5c773c4087928f2ffd51320870fcffcf2721743673_prof);
 
     }
 
     // line 2
     public function block_body($context, array $blocks = array())
     {
-        $__internal_ae7313f7388ae1a751b24d9731e3e65a772842daee604b40f5fcedf79012eba7 = $this->env->getExtension("native_profiler");
-        $__internal_ae7313f7388ae1a751b24d9731e3e65a772842daee604b40f5fcedf79012eba7->enter($__internal_ae7313f7388ae1a751b24d9731e3e65a772842daee604b40f5fcedf79012eba7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_cfbab25d687bf8c303ec82c8d3f063260f86a592de5c9604fd3ad7ca16623a85 = $this->env->getExtension("native_profiler");
+        $__internal_cfbab25d687bf8c303ec82c8d3f063260f86a592de5c9604fd3ad7ca16623a85->enter($__internal_cfbab25d687bf8c303ec82c8d3f063260f86a592de5c9604fd3ad7ca16623a85_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 3
         echo "    <body>
@@ -202,23 +202,18 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
         echo "</p>
                         <ul class=\"progess-bars\">
                             <li>
-                                <span>ANIMATIONS 85%</span>
+                                <span>Ratings 85%</span>
                                 <div class=\"progress\">
                                     <div class=\"progress-bar\" role=\"progressbar\" aria-valuenow=\"85\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: 85%;\"></div>
                                 </div>
                             </li>
                             <li>
-                                <span>PHOTOSHOP 95%</span>
+                                <span>Popularity 95%</span>
                                 <div class=\"progress\">
                                     <div class=\"progress-bar\" role=\"progressbar\" aria-valuenow=\"95\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: 95%;\"></div>
                                 </div>
                             </li>
-                            <li>
-                                <span>MARKETING 40%</span>
-                                <div class=\"progress\">
-                                    <div class=\"progress-bar\" role=\"progressbar\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: 40%;\"></div>
-                                </div>
-                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -232,7 +227,7 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
             <div class=\"row page-heading\">
                 <div class=\"col-md-8 col-sm-8\">
                     <h3 class=\"page-title\">My Gallery</h3>
-                    <p class=\"page-subtitle\">CHECK SOME OF MY LAST PROJECTS</p>
+                    <p class=\"page-subtitle\">Posts added by the User</p>
                 </div>
                 <div class=\"col-md-4 col-sm-4 hidden-xs text-right\">
                     <p class=\"page-icon\"><i class=\"fa fa-camera\"></i></p>
@@ -346,7 +341,7 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
                 <div class=\"col-md-3 col-sm-12\">
                     <div class=\"contact-info\">
                         <h4>Contact Information</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius aliquam diam, ac cursus enim. Ut interdum leo mattis varius pulvinar.</p>
+                        
                         <ul class=\"social-icons\">
                             <li><a href=\"#\" class=\"fa fa-facebook\"></a></li>
                             <li><a href=\"#\" class=\"fa fa-twitter\"></a></li>
@@ -373,7 +368,7 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
     </body>
 ";
         
-        $__internal_ae7313f7388ae1a751b24d9731e3e65a772842daee604b40f5fcedf79012eba7->leave($__internal_ae7313f7388ae1a751b24d9731e3e65a772842daee604b40f5fcedf79012eba7_prof);
+        $__internal_cfbab25d687bf8c303ec82c8d3f063260f86a592de5c9604fd3ad7ca16623a85->leave($__internal_cfbab25d687bf8c303ec82c8d3f063260f86a592de5c9604fd3ad7ca16623a85_prof);
 
     }
 
@@ -537,23 +532,18 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
 /*                         <p>{{ data.contact }}</p>*/
 /*                         <ul class="progess-bars">*/
 /*                             <li>*/
-/*                                 <span>ANIMATIONS 85%</span>*/
+/*                                 <span>Ratings 85%</span>*/
 /*                                 <div class="progress">*/
 /*                                     <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>*/
 /*                                 </div>*/
 /*                             </li>*/
 /*                             <li>*/
-/*                                 <span>PHOTOSHOP 95%</span>*/
+/*                                 <span>Popularity 95%</span>*/
 /*                                 <div class="progress">*/
 /*                                     <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>*/
 /*                                 </div>*/
 /*                             </li>*/
-/*                             <li>*/
-/*                                 <span>MARKETING 40%</span>*/
-/*                                 <div class="progress">*/
-/*                                     <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>*/
-/*                                 </div>*/
-/*                             </li>*/
+/* */
 /*                         </ul>*/
 /*                     </div>*/
 /*                 </div>*/
@@ -567,7 +557,7 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
 /*             <div class="row page-heading">*/
 /*                 <div class="col-md-8 col-sm-8">*/
 /*                     <h3 class="page-title">My Gallery</h3>*/
-/*                     <p class="page-subtitle">CHECK SOME OF MY LAST PROJECTS</p>*/
+/*                     <p class="page-subtitle">Posts added by the User</p>*/
 /*                 </div>*/
 /*                 <div class="col-md-4 col-sm-4 hidden-xs text-right">*/
 /*                     <p class="page-icon"><i class="fa fa-camera"></i></p>*/
@@ -681,7 +671,7 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
 /*                 <div class="col-md-3 col-sm-12">*/
 /*                     <div class="contact-info">*/
 /*                         <h4>Contact Information</h4>*/
-/*                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius aliquam diam, ac cursus enim. Ut interdum leo mattis varius pulvinar.</p>*/
+/*                         */
 /*                         <ul class="social-icons">*/
 /*                             <li><a href="#" class="fa fa-facebook"></a></li>*/
 /*                             <li><a href="#" class="fa fa-twitter"></a></li>*/
