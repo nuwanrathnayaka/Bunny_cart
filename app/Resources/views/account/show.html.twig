@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Account</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Userid</th>
+                <td>{{ account.userId }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ account.description }}</td>
+            </tr>
+            <tr>
+                <th>Profilepic</th>
+                <td>{{ account.profilePic }}</td>
+            </tr>
+            <tr>
+                <th>Coverpic</th>
+                <td>{{ account.coverPic }}</td>
+            </tr>
+            <tr>
+                <th>Category</th>
+                <td>{{ account.category }}</td>
+            </tr>
+            <tr>
+                <th>Businessname</th>
+                <td>{{ account.businessName }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('account_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('account_edit', { 'id': account.userId }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

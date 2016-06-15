@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<h1>Adding a new product</h1>
+{{ 3 }}
+    <body>
+    <script>
+        map.on('zoomend', function(e) {
+            // use callback e variable
+            console.log('zoom: ' + e.target.getZoom());
+
+            $.ajax({
+                type: "POST",
+                url: "/recherche/ajax",
+                data: {
+                    zoom: e.target.getZoom()
+                },
+                dataType: "json",
+                success: function(response) {
+                    console.log(response);
+                }
+            });
+
+        });
+    </script>
+
+    </body>
+{% endblock %}
