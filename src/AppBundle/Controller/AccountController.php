@@ -86,17 +86,21 @@ class AccountController extends Controller
                 //end here
                 $cover_picture=$account->getCoverPic();
                 $fileName1 = md5(uniqid()).'.'.$cover_picture->guessExtension();
-                $fileName1=$fileName1."cvr";
                 $destination1 = $this->container->getParameter('kernel.root_dir').'/../web/uploads/cover_pics';
                 $cover_picture->move($destination1, $fileName1);
 
                 $userAccount->setProfilePic($fileName);
                 $userAccount->setCoverPic($fileName1);
+                $userAccount->setDescription($account->getDescription());
+                $userAccount->setCategory($account->getCategory());
+                $userAccount->setBusinessVision($account->getBusinessVision());
+                $userAccount->setAddress($account->getAddress());
+                $userAccount->setTelephoneNumber($account->getTelephoneNumber());
                 $em->flush();
             }
 
 
-            return $this->redirectToRoute('account_show', array('id' => $account->getUserId()));
+            //return $this->redirectToRoute('account_show', array('id' => $account->getUserId()));
         }
 
         return $this->render('account/new.html.twig', array(
@@ -127,12 +131,17 @@ class AccountController extends Controller
             $description=$account->getDescription();
             $profilePic=$account->getProfilePic();
             $coverPic=$account->getCoverPic();
+            $vision=$account->getBusinessVision();
+            $category=$account->getCategory();
+            $address=$account->getAddress();
+            $contact=$account->getTelephoneNumber();
         }catch(Exception $e){
 
         }
 
         return $this->render('default/myAccount.html.twig', array(
-            'base_dir' => realpath($this->container->getParameter('kernel.root_dir').'/..'), 'data'=>array('business_name'=>$businessName,'description'=>$description,'profile_picture'=>$profilePic,'cover_picture'=>$coverPic),
+            'base_dir' => realpath($this->container->getParameter('kernel.root_dir').'/..'), 'data'=>array('business_name'=>$businessName,'description'=>$description,'profile_picture'=>$profilePic,'cover_picture'=>$coverPic
+            ,'vision'=>$vision,'category'=>$category,'address'=>$address,'contact'=>$contact),
         ));
 
 

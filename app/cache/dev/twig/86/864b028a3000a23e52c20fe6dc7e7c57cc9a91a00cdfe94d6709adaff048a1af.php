@@ -21,20 +21,20 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_59fad5a6ca335d3c52e35d192de7b290f01e721a75be83f1f9eaef8be086b018 = $this->env->getExtension("native_profiler");
-        $__internal_59fad5a6ca335d3c52e35d192de7b290f01e721a75be83f1f9eaef8be086b018->enter($__internal_59fad5a6ca335d3c52e35d192de7b290f01e721a75be83f1f9eaef8be086b018_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/myAccount.html.twig"));
+        $__internal_7cc4682fdd3ec11ee5eedb45641a05883a23fe721df3a41b64e78e9e85ab3573 = $this->env->getExtension("native_profiler");
+        $__internal_7cc4682fdd3ec11ee5eedb45641a05883a23fe721df3a41b64e78e9e85ab3573->enter($__internal_7cc4682fdd3ec11ee5eedb45641a05883a23fe721df3a41b64e78e9e85ab3573_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/myAccount.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_59fad5a6ca335d3c52e35d192de7b290f01e721a75be83f1f9eaef8be086b018->leave($__internal_59fad5a6ca335d3c52e35d192de7b290f01e721a75be83f1f9eaef8be086b018_prof);
+        $__internal_7cc4682fdd3ec11ee5eedb45641a05883a23fe721df3a41b64e78e9e85ab3573->leave($__internal_7cc4682fdd3ec11ee5eedb45641a05883a23fe721df3a41b64e78e9e85ab3573_prof);
 
     }
 
     // line 2
     public function block_body($context, array $blocks = array())
     {
-        $__internal_521d653ddac0a4ebaf7d84dadebeed1df4b3638c591d64f5dda81c216110012a = $this->env->getExtension("native_profiler");
-        $__internal_521d653ddac0a4ebaf7d84dadebeed1df4b3638c591d64f5dda81c216110012a->enter($__internal_521d653ddac0a4ebaf7d84dadebeed1df4b3638c591d64f5dda81c216110012a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_ae7313f7388ae1a751b24d9731e3e65a772842daee604b40f5fcedf79012eba7 = $this->env->getExtension("native_profiler");
+        $__internal_ae7313f7388ae1a751b24d9731e3e65a772842daee604b40f5fcedf79012eba7->enter($__internal_ae7313f7388ae1a751b24d9731e3e65a772842daee604b40f5fcedf79012eba7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 3
         echo "    <body>
@@ -148,7 +148,10 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
             <div class=\"row page-heading\">
                 <div class=\"col-md-8 col-sm-8\">
                     <h3 class=\"page-title\">About Me</h3>
-                    <p class=\"page-subtitle\">LEARN MORE ABOUT ME AND MY EXPERIENCE</p>
+                    <p class=\"page-subtitle\">";
+        // line 114
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["data"]) ? $context["data"] : $this->getContext($context, "data")), "vision", array()), "html", null, true);
+        echo "</p>
                 </div>
                 <div class=\"col-md-4 col-sm-4 hidden-xs page-icon-holder\">
                     <p class=\"page-icon\"><i class=\"fa fa-user\"></i></p>
@@ -157,7 +160,11 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
             <div class=\"row\">
                 <div class=\"col-md-4 col-sm-6 col-xs-12\">
                     <div class=\"profile-image\">
-                        <img src=\"img/9.jpg\" alt=\"\">
+                        <img src=\"";
+        // line 123
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("uploads/profile_pics/"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["data"]) ? $context["data"] : $this->getContext($context, "data")), "profile_picture", array()), "html", null, true);
+        echo "\" alt=\"\">
                     </div>
                 </div>
                 <div class=\"col-md-4 col-sm-6 col-xs-12\">
@@ -166,8 +173,14 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
         // line 128
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["data"]) ? $context["data"] : $this->getContext($context, "data")), "business_name", array()), "html", null, true);
         echo "</h4>
-                        <span>Web Designer</span>
-                        <p>Pellentesque elementum, lacus sit amet hendrerit posuere, quam quam tristique nisi, nec ornare ligula magna id nisl. Donec blandit enim ac semper facilisis. Curabitur eu laoreet mauris, eget fermentum velit.</p>
+                        <span>";
+        // line 129
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["data"]) ? $context["data"] : $this->getContext($context, "data")), "category", array()), "html", null, true);
+        echo "</span>
+                        <p>";
+        // line 130
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["data"]) ? $context["data"] : $this->getContext($context, "data")), "description", array()), "html", null, true);
+        echo ".</p>
                         <ul class=\"social-icons\">
                             <li><a href=\"#\" class=\"fa fa-facebook\"></a></li>
                             <li><a href=\"#\" class=\"fa fa-twitter\"></a></li>
@@ -178,8 +191,15 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
                 </div>
                 <div class=\"col-md-4 col-sm-12 col-xs-12\">
                     <div class=\"my-skills\">
-                        <h4>My Skills</h4>
-                        <p>Etiam ac nisi sed velit tempor facilisis. Aenean pellentesque mollis metus, non tincidunt odio maximus nec. Praesent felis ex, elementum sed lobortis.</p>
+                        <h4>Contact us</h4>
+                        <p> ";
+        // line 142
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["data"]) ? $context["data"] : $this->getContext($context, "data")), "address", array()), "html", null, true);
+        echo "</p>
+                        <p>";
+        // line 143
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["data"]) ? $context["data"] : $this->getContext($context, "data")), "contact", array()), "html", null, true);
+        echo "</p>
                         <ul class=\"progess-bars\">
                             <li>
                                 <span>ANIMATIONS 85%</span>
@@ -353,7 +373,7 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
     </body>
 ";
         
-        $__internal_521d653ddac0a4ebaf7d84dadebeed1df4b3638c591d64f5dda81c216110012a->leave($__internal_521d653ddac0a4ebaf7d84dadebeed1df4b3638c591d64f5dda81c216110012a_prof);
+        $__internal_ae7313f7388ae1a751b24d9731e3e65a772842daee604b40f5fcedf79012eba7->leave($__internal_ae7313f7388ae1a751b24d9731e3e65a772842daee604b40f5fcedf79012eba7_prof);
 
     }
 
@@ -369,7 +389,7 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
 
     public function getDebugInfo()
     {
-        return array (  167 => 128,  40 => 3,  34 => 2,  11 => 1,);
+        return array (  201 => 143,  197 => 142,  182 => 130,  178 => 129,  174 => 128,  165 => 123,  153 => 114,  40 => 3,  34 => 2,  11 => 1,);
     }
 }
 /* {% extends 'base.html.twig' %}*/
@@ -485,7 +505,7 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
 /*             <div class="row page-heading">*/
 /*                 <div class="col-md-8 col-sm-8">*/
 /*                     <h3 class="page-title">About Me</h3>*/
-/*                     <p class="page-subtitle">LEARN MORE ABOUT ME AND MY EXPERIENCE</p>*/
+/*                     <p class="page-subtitle">{{ data.vision }}</p>*/
 /*                 </div>*/
 /*                 <div class="col-md-4 col-sm-4 hidden-xs page-icon-holder">*/
 /*                     <p class="page-icon"><i class="fa fa-user"></i></p>*/
@@ -494,14 +514,14 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
 /*             <div class="row">*/
 /*                 <div class="col-md-4 col-sm-6 col-xs-12">*/
 /*                     <div class="profile-image">*/
-/*                         <img src="img/9.jpg" alt="">*/
+/*                         <img src="{{ asset( 'uploads/profile_pics/' ) }}{{ data.profile_picture }}" alt="">*/
 /*                     </div>*/
 /*                 </div>*/
 /*                 <div class="col-md-4 col-sm-6 col-xs-12">*/
 /*                     <div class="profile-content">*/
 /*                         <h4>{{ data.business_name }}</h4>*/
-/*                         <span>Web Designer</span>*/
-/*                         <p>Pellentesque elementum, lacus sit amet hendrerit posuere, quam quam tristique nisi, nec ornare ligula magna id nisl. Donec blandit enim ac semper facilisis. Curabitur eu laoreet mauris, eget fermentum velit.</p>*/
+/*                         <span>{{ data.category }}</span>*/
+/*                         <p>{{ data.description }}.</p>*/
 /*                         <ul class="social-icons">*/
 /*                             <li><a href="#" class="fa fa-facebook"></a></li>*/
 /*                             <li><a href="#" class="fa fa-twitter"></a></li>*/
@@ -512,8 +532,9 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
 /*                 </div>*/
 /*                 <div class="col-md-4 col-sm-12 col-xs-12">*/
 /*                     <div class="my-skills">*/
-/*                         <h4>My Skills</h4>*/
-/*                         <p>Etiam ac nisi sed velit tempor facilisis. Aenean pellentesque mollis metus, non tincidunt odio maximus nec. Praesent felis ex, elementum sed lobortis.</p>*/
+/*                         <h4>Contact us</h4>*/
+/*                         <p> {{ data.address }}</p>*/
+/*                         <p>{{ data.contact }}</p>*/
 /*                         <ul class="progess-bars">*/
 /*                             <li>*/
 /*                                 <span>ANIMATIONS 85%</span>*/

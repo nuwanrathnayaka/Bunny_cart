@@ -22,20 +22,20 @@ class __TwigTemplate_7ad4ffd4e545121bc6936aaafc1082e317b3ea48f8f4f9ded5973cf53e2
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_3f42cc2c621d73e1f59b5ace6692f78b7c10e63845242f80694edbab742ab95e = $this->env->getExtension("native_profiler");
-        $__internal_3f42cc2c621d73e1f59b5ace6692f78b7c10e63845242f80694edbab742ab95e->enter($__internal_3f42cc2c621d73e1f59b5ace6692f78b7c10e63845242f80694edbab742ab95e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/index.html.twig"));
+        $__internal_7cffb2e8a2e32dc0fb0d110a7d4dafc5d0179b2a639127af70bc09ba4ef627c0 = $this->env->getExtension("native_profiler");
+        $__internal_7cffb2e8a2e32dc0fb0d110a7d4dafc5d0179b2a639127af70bc09ba4ef627c0->enter($__internal_7cffb2e8a2e32dc0fb0d110a7d4dafc5d0179b2a639127af70bc09ba4ef627c0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_3f42cc2c621d73e1f59b5ace6692f78b7c10e63845242f80694edbab742ab95e->leave($__internal_3f42cc2c621d73e1f59b5ace6692f78b7c10e63845242f80694edbab742ab95e_prof);
+        $__internal_7cffb2e8a2e32dc0fb0d110a7d4dafc5d0179b2a639127af70bc09ba4ef627c0->leave($__internal_7cffb2e8a2e32dc0fb0d110a7d4dafc5d0179b2a639127af70bc09ba4ef627c0_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_c983eb5109f6fdc788ee09ca846727158f5c9e059f439d51384a9083ea48caa5 = $this->env->getExtension("native_profiler");
-        $__internal_c983eb5109f6fdc788ee09ca846727158f5c9e059f439d51384a9083ea48caa5->enter($__internal_c983eb5109f6fdc788ee09ca846727158f5c9e059f439d51384a9083ea48caa5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_a2edb7e7ea642ba93e9c2f520984fe233f68f95b9e55e8764fe307f523281cb4 = $this->env->getExtension("native_profiler");
+        $__internal_a2edb7e7ea642ba93e9c2f520984fe233f68f95b9e55e8764fe307f523281cb4->enter($__internal_a2edb7e7ea642ba93e9c2f520984fe233f68f95b9e55e8764fe307f523281cb4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    <body>
@@ -46,7 +46,7 @@ class __TwigTemplate_7ad4ffd4e545121bc6936aaafc1082e317b3ea48f8f4f9ded5973cf53e2
         window.onscroll = function() {myFunction()};
 
         function myFunction() {
-            if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 500) {
+            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 500) {
                 //document.getElementById(\"myP\").className = \"teft\";
                 var iDiv = document.createElement('div');
                 iDiv.id = 'block';
@@ -126,136 +126,107 @@ class __TwigTemplate_7ad4ffd4e545121bc6936aaafc1082e317b3ea48f8f4f9ded5973cf53e2
                 <div class=\"col-md-9 header-left\">
                     <div class=\"top-nav\">
                         <ul class=\"memenu skyblue\"><li class=\"active\"><a href=\"index.html\">Home</a></li>
-                            <li class=\"grid\"><a href=\"#\">Men</a>
+                            <li class=\"grid\"><a href=\"#\">Life & Leisure</a>
                                 <div class=\"mepanel\">
                                     <div class=\"row\">
                                         <div class=\"col1 me-one\">
-                                            <h4>Shop</h4>
+                                            <h4>Fashion</h4>
                                             <ul>
-                                                <li><a href=\"products.html\">New Arrivals</a></li>
-                                                <li><a href=\"products.html\">Blazers</a></li>
-                                                <li><a href=\"products.html\">Swem Wear</a></li>
-                                                <li><a href=\"products.html\">Accessories</a></li>
+                                                <li><a href=\"products.html\">Clothes</a></li>
+                                                <li><a href=\"products.html\">Bags</a></li>
+                                                <li><a href=\"products.html\">Watches</a></li>
+                                                <li><a href=\"products.html\">Jewelleries</a></li>
                                                 <li><a href=\"products.html\">Handbags</a></li>
-                                                <li><a href=\"products.html\">T-Shirts</a></li>
-                                                <li><a href=\"products.html\">Watches</a></li>
-                                                <li><a href=\"products.html\">My Shopping Bag</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class=\"col1 me-one\">
-                                            <h4>Style Zone</h4>
-                                            <ul>
+                                                <li><a href=\"products.html\">cosmetics</a></li>
                                                 <li><a href=\"products.html\">Shoes</a></li>
-                                                <li><a href=\"products.html\">Watches</a></li>
-                                                <li><a href=\"products.html\">Brands</a></li>
-                                                <li><a href=\"products.html\">Coats</a></li>
-                                                <li><a href=\"products.html\">Accessories</a></li>
-                                                <li><a href=\"products.html\">Trousers</a></li>
                                             </ul>
                                         </div>
                                         <div class=\"col1 me-one\">
-                                            <h4>Popular Brands</h4>
+                                            <h4>Foods</h4>
                                             <ul>
-                                                <li><a href=\"products.html\">499 Store</a></li>
-                                                <li><a href=\"products.html\">Fastrack</a></li>
-                                                <li><a href=\"products.html\">Casio</a></li>
-                                                <li><a href=\"products.html\">Fossil</a></li>
-                                                <li><a href=\"products.html\">Maxima</a></li>
-                                                <li><a href=\"products.html\">Timex</a></li>
-                                                <li><a href=\"products.html\">TomTom</a></li>
-                                                <li><a href=\"products.html\">Titan</a></li>
+                                                <li><a href=\"products.html\">Foods</a></li>
+                                                <li><a href=\"products.html\">Drinks</a></li>
+                                                <li><a href=\"products.html\">Restaurants</a></li>
+                                                <li><a href=\"products.html\">Hotels</a></li>
+                                                <li><a href=\"products.html\">Farms</a></li>
+                                                <li><a href=\"products.html\">Fish/Meat</a></li>
+                                                <li><a href=\"products.html\">vegis & Fruits</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class=\"col1 me-one\">
+                                            <h4>Other</h4>
+                                            <ul>
+                                                <li><a href=\"products.html\">Fancy</a></li>
+                                                <li><a href=\"products.html\">Gifts</a></li>
+                                                <li><a href=\"products.html\">Sport</a></li>
+                                                <li><a href=\"products.html\">Photography</a></li>
+                                                <li><a href=\"products.html\">Crafts</a></li>
+                                                <li><a href=\"products.html\">Flowers</a></li>
+                                                <li><a href=\"products.html\">Decorations</a></li>
+                                                <li><a href=\"products.html\">Travel & Vacation</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </li>
-                            <li class=\"grid\"><a href=\"#\">Women</a>
+                            <li class=\"grid\"><a href=\"#\">Technical & Construction</a>
                                 <div class=\"mepanel\">
                                     <div class=\"row\">
                                         <div class=\"col1 me-one\">
-                                            <h4>Shop</h4>
+                                            <h4>Mobile & Computers</h4>
                                             <ul>
-                                                <li><a href=\"products.html\">New Arrivals</a></li>
-                                                <li><a href=\"products.html\">Blazers</a></li>
-                                                <li><a href=\"products.html\">Swem Wear</a></li>
-                                                <li><a href=\"products.html\">Accessories</a></li>
-                                                <li><a href=\"products.html\">Handbags</a></li>
-                                                <li><a href=\"products.html\">T-Shirts</a></li>
+                                                <li><a href=\"products.html\">Mobile Phones</a></li>
+                                                <li><a href=\"products.html\">Phone Repair</a></li>
+                                                <li><a href=\"products.html\">Computers and Repair</a></li>
+                                                <li><a href=\"products.html\">Consumer Electronics</a></li>
                                                 <li><a href=\"products.html\">Watches</a></li>
                                                 <li><a href=\"products.html\">My Shopping Bag</a></li>
                                             </ul>
                                         </div>
                                         <div class=\"col1 me-one\">
-                                            <h4>Style Zone</h4>
+                                            <h4>Construction</h4>
                                             <ul>
-                                                <li><a href=\"products.html\">Shoes</a></li>
-                                                <li><a href=\"products.html\">Watches</a></li>
-                                                <li><a href=\"products.html\">Brands</a></li>
-                                                <li><a href=\"products.html\">Coats</a></li>
-                                                <li><a href=\"products.html\">Accessories</a></li>
-                                                <li><a href=\"products.html\">Trousers</a></li>
+                                                <li><a href=\"products.html\">Lands</a></li>
+                                                <li><a href=\"products.html\">Homes</a></li>
+                                                <li><a href=\"products.html\">Constructions</a></li>
+                                                <li><a href=\"products.html\">Furniture</a></li>
+                                                <li><a href=\"products.html\">Household Items</a></li>
+                                                <li><a href=\"products.html\">Row materials</a></li>
                                             </ul>
                                         </div>
                                         <div class=\"col1 me-one\">
-                                            <h4>Popular Brands</h4>
+                                            <h4>Automobile & Mechanical</h4>
                                             <ul>
-                                                <li><a href=\"products.html\">499 Store</a></li>
-                                                <li><a href=\"products.html\">Fastrack</a></li>
-                                                <li><a href=\"products.html\">Casio</a></li>
-                                                <li><a href=\"products.html\">Fossil</a></li>
-                                                <li><a href=\"products.html\">Maxima</a></li>
-                                                <li><a href=\"products.html\">Timex</a></li>
-                                                <li><a href=\"products.html\">TomTom</a></li>
-                                                <li><a href=\"products.html\">Titan</a></li>
+                                                <li><a href=\"products.html\">Vehicles</a></li>
+                                                <li><a href=\"products.html\">Garages & Service Centers</a></li>
+                                                <li><a href=\"products.html\">Hardwares</a></li>
+                                                <li><a href=\"products.html\">Fuel</a></li>
+                                                <li><a href=\"products.html\">Machines</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </li>
-                            <li class=\"grid\"><a href=\"#\">Kids</a>
+                            <li class=\"grid\"><a href=\"#\">Services</a>
                                 <div class=\"mepanel\">
                                     <div class=\"row\">
                                         <div class=\"col1 me-one\">
-                                            <h4>Shop</h4>
+                                            <h4>Services & Productions</h4>
                                             <ul>
-                                                <li><a href=\"products.html\">New Arrivals</a></li>
-                                                <li><a href=\"products.html\">Blazers</a></li>
-                                                <li><a href=\"products.html\">Swem Wear</a></li>
-                                                <li><a href=\"products.html\">Accessories</a></li>
-                                                <li><a href=\"products.html\">Handbags</a></li>
-                                                <li><a href=\"products.html\">T-Shirts</a></li>
-                                                <li><a href=\"products.html\">Watches</a></li>
-                                                <li><a href=\"products.html\">My Shopping Bag</a></li>
+                                                <li><a href=\"products.html\">Education</a></li>
+                                                <li><a href=\"products.html\">Health</a></li>
+                                                <li><a href=\"products.html\">Information & Communication</a></li>
+                                                <li><a href=\"products.html\">Companies</a></li>
+                                                <li><a href=\"products.html\">Banks</a></li>
+                                                <li><a href=\"products.html\">Shopping Centers</a></li>
+
                                             </ul>
                                         </div>
-                                        <div class=\"col1 me-one\">
-                                            <h4>Style Zone</h4>
-                                            <ul>
-                                                <li><a href=\"products.html\">Shoes</a></li>
-                                                <li><a href=\"products.html\">Watches</a></li>
-                                                <li><a href=\"products.html\">Brands</a></li>
-                                                <li><a href=\"products.html\">Coats</a></li>
-                                                <li><a href=\"products.html\">Accessories</a></li>
-                                                <li><a href=\"products.html\">Trousers</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class=\"col1 me-one\">
-                                            <h4>Popular Brands</h4>
-                                            <ul>
-                                                <li><a href=\"products.html\">499 Store</a></li>
-                                                <li><a href=\"products.html\">Fastrack</a></li>
-                                                <li><a href=\"products.html\">Casio</a></li>
-                                                <li><a href=\"products.html\">Fossil</a></li>
-                                                <li><a href=\"products.html\">Maxima</a></li>
-                                                <li><a href=\"products.html\">Timex</a></li>
-                                                <li><a href=\"products.html\">TomTom</a></li>
-                                                <li><a href=\"products.html\">Titan</a></li>
-                                            </ul>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </li>
-                            <li class=\"grid\"><a href=\"typo.html\">Blog</a>
+                            <li class=\"grid\"><a href=\"typo.html\">Other</a>
                             </li>
                             <li class=\"grid\"><a href=\"contact.html\">Contact</a>
                             </li>
@@ -280,19 +251,19 @@ class __TwigTemplate_7ad4ffd4e545121bc6936aaafc1082e317b3ea48f8f4f9ded5973cf53e2
             <ul class=\"rslides\" id=\"slider4\">
                 <li>
                     <img src=\"";
-        // line 239
+        // line 210
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/dist/images/bnr-1.jpg"), "html", null, true);
         echo "\" alt=\"\"/>
                 </li>
                 <li>
                     <img src=\"";
-        // line 242
+        // line 213
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/dist/images/bnr-2.jpg"), "html", null, true);
         echo "\" alt=\"\"/>
                 </li>
                 <li>
                     <img src=\"";
-        // line 245
+        // line 216
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/dist/images/bnr-3.jpg"), "html", null, true);
         echo "\" alt=\"\"/>
                 </li>
@@ -303,7 +274,7 @@ class __TwigTemplate_7ad4ffd4e545121bc6936aaafc1082e317b3ea48f8f4f9ded5973cf53e2
     <!--banner-ends-->
     <!--Slider-Starts-Here-->
     <script src=\"";
-        // line 253
+        // line 224
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/dist/js/responsiveslides.min.js"), "html", null, true);
         echo "\"></script>
     <script>
@@ -339,7 +310,7 @@ class __TwigTemplate_7ad4ffd4e545121bc6936aaafc1082e317b3ea48f8f4f9ded5973cf53e2
                 <div class=\"col-md-4 about-left\">
                     <figure class=\"effect-bubba\">
                         <img class=\"img-responsive\" src=\"";
-        // line 286
+        // line 257
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/dist/images/abt-1.jpg"), "html", null, true);
         echo "\" alt=\"\"/>
                         <figcaption>
@@ -351,7 +322,7 @@ class __TwigTemplate_7ad4ffd4e545121bc6936aaafc1082e317b3ea48f8f4f9ded5973cf53e2
                 <div class=\"col-md-4 about-left\">
                     <figure class=\"effect-bubba\">
                         <img class=\"img-responsive\" src=\"";
-        // line 295
+        // line 266
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/dist/images/abt-2.jpg"), "html", null, true);
         echo "\" alt=\"\"/>
                         <figcaption>
@@ -363,7 +334,7 @@ class __TwigTemplate_7ad4ffd4e545121bc6936aaafc1082e317b3ea48f8f4f9ded5973cf53e2
                 <div class=\"col-md-4 about-left\">
                     <figure class=\"effect-bubba\">
                         <img class=\"img-responsive\" src=\"";
-        // line 304
+        // line 275
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/dist/images/abt-3.jpg"), "html", null, true);
         echo "\" alt=\"\"/>
                         <figcaption>
@@ -534,11 +505,11 @@ class __TwigTemplate_7ad4ffd4e545121bc6936aaafc1082e317b3ea48f8f4f9ded5973cf53e2
                 </div>
                 <div class=\"col-md-3 infor-left\">
                     <h3>Store Information</h3>
-                    <h4>The company name,
-                        <span>Lorem ipsum dolor,</span>
-                        Glasglow Dr 40 Fe 72.</h4>
-                    <h5>+955 123 4567</h5>
-                    <p><a href=\"mailto:example@email.com\">contact@example.com</a></p>
+                    <h4>Advanced Solutions,
+                        <span>Sri Lankan Branch,</span>
+                        Moratuwa.</h4>
+                    <h5>+94712650505</h5>
+                    <p><a href=\"nuwan.13@cse.mrt.ac.lk\">E-Mail me</a></p>
                 </div>
                 <div class=\"clearfix\"></div>
             </div>
@@ -556,7 +527,7 @@ class __TwigTemplate_7ad4ffd4e545121bc6936aaafc1082e317b3ea48f8f4f9ded5973cf53e2
                     </form>
                 </div>
                 <div class=\"col-md-6 footer-right\">
-                    <p>© 2015 Luxury Watches. All Rights Reserved | Design by  <a href=\"http://w3layouts.com/\" target=\"_blank\">W3layouts</a> </p>
+                    <p>© 2016 Advanced Solutions. All Rights Reserved | Design by  Nuwan Rathnayaka </p>
                 </div>
                 <div class=\"clearfix\"></div>
             </div>
@@ -570,21 +541,21 @@ class __TwigTemplate_7ad4ffd4e545121bc6936aaafc1082e317b3ea48f8f4f9ded5973cf53e2
     </body>
 ";
         
-        $__internal_c983eb5109f6fdc788ee09ca846727158f5c9e059f439d51384a9083ea48caa5->leave($__internal_c983eb5109f6fdc788ee09ca846727158f5c9e059f439d51384a9083ea48caa5_prof);
+        $__internal_a2edb7e7ea642ba93e9c2f520984fe233f68f95b9e55e8764fe307f523281cb4->leave($__internal_a2edb7e7ea642ba93e9c2f520984fe233f68f95b9e55e8764fe307f523281cb4_prof);
 
     }
 
-    // line 509
+    // line 480
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_81b86d20033805e066d4a7a243ebe850582444367dd34de9198ae46d166490a5 = $this->env->getExtension("native_profiler");
-        $__internal_81b86d20033805e066d4a7a243ebe850582444367dd34de9198ae46d166490a5->enter($__internal_81b86d20033805e066d4a7a243ebe850582444367dd34de9198ae46d166490a5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_ab4530e26bf3229a82ff823b718205fae9cca9673af698d10ced292c6e6db242 = $this->env->getExtension("native_profiler");
+        $__internal_ab4530e26bf3229a82ff823b718205fae9cca9673af698d10ced292c6e6db242->enter($__internal_ab4530e26bf3229a82ff823b718205fae9cca9673af698d10ced292c6e6db242_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 510
+        // line 481
         echo "
 ";
         
-        $__internal_81b86d20033805e066d4a7a243ebe850582444367dd34de9198ae46d166490a5->leave($__internal_81b86d20033805e066d4a7a243ebe850582444367dd34de9198ae46d166490a5_prof);
+        $__internal_ab4530e26bf3229a82ff823b718205fae9cca9673af698d10ced292c6e6db242->leave($__internal_ab4530e26bf3229a82ff823b718205fae9cca9673af698d10ced292c6e6db242_prof);
 
     }
 
@@ -600,7 +571,7 @@ class __TwigTemplate_7ad4ffd4e545121bc6936aaafc1082e317b3ea48f8f4f9ded5973cf53e2
 
     public function getDebugInfo()
     {
-        return array (  584 => 510,  578 => 509,  367 => 304,  355 => 295,  343 => 286,  307 => 253,  296 => 245,  290 => 242,  284 => 239,  92 => 50,  68 => 29,  41 => 4,  35 => 3,  11 => 1,);
+        return array (  555 => 481,  549 => 480,  338 => 275,  326 => 266,  314 => 257,  278 => 224,  267 => 216,  261 => 213,  255 => 210,  92 => 50,  68 => 29,  41 => 4,  35 => 3,  11 => 1,);
     }
 }
 /* {% extends 'base.html.twig' %}*/
@@ -614,7 +585,7 @@ class __TwigTemplate_7ad4ffd4e545121bc6936aaafc1082e317b3ea48f8f4f9ded5973cf53e2
 /*         window.onscroll = function() {myFunction()};*/
 /* */
 /*         function myFunction() {*/
-/*             if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 500) {*/
+/*             if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 500) {*/
 /*                 //document.getElementById("myP").className = "teft";*/
 /*                 var iDiv = document.createElement('div');*/
 /*                 iDiv.id = 'block';*/
@@ -688,136 +659,107 @@ class __TwigTemplate_7ad4ffd4e545121bc6936aaafc1082e317b3ea48f8f4f9ded5973cf53e2
 /*                 <div class="col-md-9 header-left">*/
 /*                     <div class="top-nav">*/
 /*                         <ul class="memenu skyblue"><li class="active"><a href="index.html">Home</a></li>*/
-/*                             <li class="grid"><a href="#">Men</a>*/
+/*                             <li class="grid"><a href="#">Life & Leisure</a>*/
 /*                                 <div class="mepanel">*/
 /*                                     <div class="row">*/
 /*                                         <div class="col1 me-one">*/
-/*                                             <h4>Shop</h4>*/
+/*                                             <h4>Fashion</h4>*/
 /*                                             <ul>*/
-/*                                                 <li><a href="products.html">New Arrivals</a></li>*/
-/*                                                 <li><a href="products.html">Blazers</a></li>*/
-/*                                                 <li><a href="products.html">Swem Wear</a></li>*/
-/*                                                 <li><a href="products.html">Accessories</a></li>*/
+/*                                                 <li><a href="products.html">Clothes</a></li>*/
+/*                                                 <li><a href="products.html">Bags</a></li>*/
+/*                                                 <li><a href="products.html">Watches</a></li>*/
+/*                                                 <li><a href="products.html">Jewelleries</a></li>*/
 /*                                                 <li><a href="products.html">Handbags</a></li>*/
-/*                                                 <li><a href="products.html">T-Shirts</a></li>*/
-/*                                                 <li><a href="products.html">Watches</a></li>*/
-/*                                                 <li><a href="products.html">My Shopping Bag</a></li>*/
-/*                                             </ul>*/
-/*                                         </div>*/
-/*                                         <div class="col1 me-one">*/
-/*                                             <h4>Style Zone</h4>*/
-/*                                             <ul>*/
+/*                                                 <li><a href="products.html">cosmetics</a></li>*/
 /*                                                 <li><a href="products.html">Shoes</a></li>*/
-/*                                                 <li><a href="products.html">Watches</a></li>*/
-/*                                                 <li><a href="products.html">Brands</a></li>*/
-/*                                                 <li><a href="products.html">Coats</a></li>*/
-/*                                                 <li><a href="products.html">Accessories</a></li>*/
-/*                                                 <li><a href="products.html">Trousers</a></li>*/
 /*                                             </ul>*/
 /*                                         </div>*/
 /*                                         <div class="col1 me-one">*/
-/*                                             <h4>Popular Brands</h4>*/
+/*                                             <h4>Foods</h4>*/
 /*                                             <ul>*/
-/*                                                 <li><a href="products.html">499 Store</a></li>*/
-/*                                                 <li><a href="products.html">Fastrack</a></li>*/
-/*                                                 <li><a href="products.html">Casio</a></li>*/
-/*                                                 <li><a href="products.html">Fossil</a></li>*/
-/*                                                 <li><a href="products.html">Maxima</a></li>*/
-/*                                                 <li><a href="products.html">Timex</a></li>*/
-/*                                                 <li><a href="products.html">TomTom</a></li>*/
-/*                                                 <li><a href="products.html">Titan</a></li>*/
+/*                                                 <li><a href="products.html">Foods</a></li>*/
+/*                                                 <li><a href="products.html">Drinks</a></li>*/
+/*                                                 <li><a href="products.html">Restaurants</a></li>*/
+/*                                                 <li><a href="products.html">Hotels</a></li>*/
+/*                                                 <li><a href="products.html">Farms</a></li>*/
+/*                                                 <li><a href="products.html">Fish/Meat</a></li>*/
+/*                                                 <li><a href="products.html">vegis & Fruits</a></li>*/
+/*                                             </ul>*/
+/*                                         </div>*/
+/*                                         <div class="col1 me-one">*/
+/*                                             <h4>Other</h4>*/
+/*                                             <ul>*/
+/*                                                 <li><a href="products.html">Fancy</a></li>*/
+/*                                                 <li><a href="products.html">Gifts</a></li>*/
+/*                                                 <li><a href="products.html">Sport</a></li>*/
+/*                                                 <li><a href="products.html">Photography</a></li>*/
+/*                                                 <li><a href="products.html">Crafts</a></li>*/
+/*                                                 <li><a href="products.html">Flowers</a></li>*/
+/*                                                 <li><a href="products.html">Decorations</a></li>*/
+/*                                                 <li><a href="products.html">Travel & Vacation</a></li>*/
 /*                                             </ul>*/
 /*                                         </div>*/
 /*                                     </div>*/
 /*                                 </div>*/
 /*                             </li>*/
-/*                             <li class="grid"><a href="#">Women</a>*/
+/*                             <li class="grid"><a href="#">Technical & Construction</a>*/
 /*                                 <div class="mepanel">*/
 /*                                     <div class="row">*/
 /*                                         <div class="col1 me-one">*/
-/*                                             <h4>Shop</h4>*/
+/*                                             <h4>Mobile & Computers</h4>*/
 /*                                             <ul>*/
-/*                                                 <li><a href="products.html">New Arrivals</a></li>*/
-/*                                                 <li><a href="products.html">Blazers</a></li>*/
-/*                                                 <li><a href="products.html">Swem Wear</a></li>*/
-/*                                                 <li><a href="products.html">Accessories</a></li>*/
-/*                                                 <li><a href="products.html">Handbags</a></li>*/
-/*                                                 <li><a href="products.html">T-Shirts</a></li>*/
+/*                                                 <li><a href="products.html">Mobile Phones</a></li>*/
+/*                                                 <li><a href="products.html">Phone Repair</a></li>*/
+/*                                                 <li><a href="products.html">Computers and Repair</a></li>*/
+/*                                                 <li><a href="products.html">Consumer Electronics</a></li>*/
 /*                                                 <li><a href="products.html">Watches</a></li>*/
 /*                                                 <li><a href="products.html">My Shopping Bag</a></li>*/
 /*                                             </ul>*/
 /*                                         </div>*/
 /*                                         <div class="col1 me-one">*/
-/*                                             <h4>Style Zone</h4>*/
+/*                                             <h4>Construction</h4>*/
 /*                                             <ul>*/
-/*                                                 <li><a href="products.html">Shoes</a></li>*/
-/*                                                 <li><a href="products.html">Watches</a></li>*/
-/*                                                 <li><a href="products.html">Brands</a></li>*/
-/*                                                 <li><a href="products.html">Coats</a></li>*/
-/*                                                 <li><a href="products.html">Accessories</a></li>*/
-/*                                                 <li><a href="products.html">Trousers</a></li>*/
+/*                                                 <li><a href="products.html">Lands</a></li>*/
+/*                                                 <li><a href="products.html">Homes</a></li>*/
+/*                                                 <li><a href="products.html">Constructions</a></li>*/
+/*                                                 <li><a href="products.html">Furniture</a></li>*/
+/*                                                 <li><a href="products.html">Household Items</a></li>*/
+/*                                                 <li><a href="products.html">Row materials</a></li>*/
 /*                                             </ul>*/
 /*                                         </div>*/
 /*                                         <div class="col1 me-one">*/
-/*                                             <h4>Popular Brands</h4>*/
+/*                                             <h4>Automobile & Mechanical</h4>*/
 /*                                             <ul>*/
-/*                                                 <li><a href="products.html">499 Store</a></li>*/
-/*                                                 <li><a href="products.html">Fastrack</a></li>*/
-/*                                                 <li><a href="products.html">Casio</a></li>*/
-/*                                                 <li><a href="products.html">Fossil</a></li>*/
-/*                                                 <li><a href="products.html">Maxima</a></li>*/
-/*                                                 <li><a href="products.html">Timex</a></li>*/
-/*                                                 <li><a href="products.html">TomTom</a></li>*/
-/*                                                 <li><a href="products.html">Titan</a></li>*/
+/*                                                 <li><a href="products.html">Vehicles</a></li>*/
+/*                                                 <li><a href="products.html">Garages & Service Centers</a></li>*/
+/*                                                 <li><a href="products.html">Hardwares</a></li>*/
+/*                                                 <li><a href="products.html">Fuel</a></li>*/
+/*                                                 <li><a href="products.html">Machines</a></li>*/
 /*                                             </ul>*/
 /*                                         </div>*/
 /*                                     </div>*/
 /*                                 </div>*/
 /*                             </li>*/
-/*                             <li class="grid"><a href="#">Kids</a>*/
+/*                             <li class="grid"><a href="#">Services</a>*/
 /*                                 <div class="mepanel">*/
 /*                                     <div class="row">*/
 /*                                         <div class="col1 me-one">*/
-/*                                             <h4>Shop</h4>*/
+/*                                             <h4>Services & Productions</h4>*/
 /*                                             <ul>*/
-/*                                                 <li><a href="products.html">New Arrivals</a></li>*/
-/*                                                 <li><a href="products.html">Blazers</a></li>*/
-/*                                                 <li><a href="products.html">Swem Wear</a></li>*/
-/*                                                 <li><a href="products.html">Accessories</a></li>*/
-/*                                                 <li><a href="products.html">Handbags</a></li>*/
-/*                                                 <li><a href="products.html">T-Shirts</a></li>*/
-/*                                                 <li><a href="products.html">Watches</a></li>*/
-/*                                                 <li><a href="products.html">My Shopping Bag</a></li>*/
+/*                                                 <li><a href="products.html">Education</a></li>*/
+/*                                                 <li><a href="products.html">Health</a></li>*/
+/*                                                 <li><a href="products.html">Information & Communication</a></li>*/
+/*                                                 <li><a href="products.html">Companies</a></li>*/
+/*                                                 <li><a href="products.html">Banks</a></li>*/
+/*                                                 <li><a href="products.html">Shopping Centers</a></li>*/
+/* */
 /*                                             </ul>*/
 /*                                         </div>*/
-/*                                         <div class="col1 me-one">*/
-/*                                             <h4>Style Zone</h4>*/
-/*                                             <ul>*/
-/*                                                 <li><a href="products.html">Shoes</a></li>*/
-/*                                                 <li><a href="products.html">Watches</a></li>*/
-/*                                                 <li><a href="products.html">Brands</a></li>*/
-/*                                                 <li><a href="products.html">Coats</a></li>*/
-/*                                                 <li><a href="products.html">Accessories</a></li>*/
-/*                                                 <li><a href="products.html">Trousers</a></li>*/
-/*                                             </ul>*/
-/*                                         </div>*/
-/*                                         <div class="col1 me-one">*/
-/*                                             <h4>Popular Brands</h4>*/
-/*                                             <ul>*/
-/*                                                 <li><a href="products.html">499 Store</a></li>*/
-/*                                                 <li><a href="products.html">Fastrack</a></li>*/
-/*                                                 <li><a href="products.html">Casio</a></li>*/
-/*                                                 <li><a href="products.html">Fossil</a></li>*/
-/*                                                 <li><a href="products.html">Maxima</a></li>*/
-/*                                                 <li><a href="products.html">Timex</a></li>*/
-/*                                                 <li><a href="products.html">TomTom</a></li>*/
-/*                                                 <li><a href="products.html">Titan</a></li>*/
-/*                                             </ul>*/
-/*                                         </div>*/
+/*                                         */
 /*                                     </div>*/
 /*                                 </div>*/
 /*                             </li>*/
-/*                             <li class="grid"><a href="typo.html">Blog</a>*/
+/*                             <li class="grid"><a href="typo.html">Other</a>*/
 /*                             </li>*/
 /*                             <li class="grid"><a href="contact.html">Contact</a>*/
 /*                             </li>*/
@@ -1075,11 +1017,11 @@ class __TwigTemplate_7ad4ffd4e545121bc6936aaafc1082e317b3ea48f8f4f9ded5973cf53e2
 /*                 </div>*/
 /*                 <div class="col-md-3 infor-left">*/
 /*                     <h3>Store Information</h3>*/
-/*                     <h4>The company name,*/
-/*                         <span>Lorem ipsum dolor,</span>*/
-/*                         Glasglow Dr 40 Fe 72.</h4>*/
-/*                     <h5>+955 123 4567</h5>*/
-/*                     <p><a href="mailto:example@email.com">contact@example.com</a></p>*/
+/*                     <h4>Advanced Solutions,*/
+/*                         <span>Sri Lankan Branch,</span>*/
+/*                         Moratuwa.</h4>*/
+/*                     <h5>+94712650505</h5>*/
+/*                     <p><a href="nuwan.13@cse.mrt.ac.lk">E-Mail me</a></p>*/
 /*                 </div>*/
 /*                 <div class="clearfix"></div>*/
 /*             </div>*/
@@ -1097,7 +1039,7 @@ class __TwigTemplate_7ad4ffd4e545121bc6936aaafc1082e317b3ea48f8f4f9ded5973cf53e2
 /*                     </form>*/
 /*                 </div>*/
 /*                 <div class="col-md-6 footer-right">*/
-/*                     <p>© 2015 Luxury Watches. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>*/
+/*                     <p>© 2016 Advanced Solutions. All Rights Reserved | Design by  Nuwan Rathnayaka </p>*/
 /*                 </div>*/
 /*                 <div class="clearfix"></div>*/
 /*             </div>*/
