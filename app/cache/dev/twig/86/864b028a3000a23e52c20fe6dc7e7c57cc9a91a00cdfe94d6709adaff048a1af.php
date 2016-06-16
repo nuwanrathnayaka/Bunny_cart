@@ -21,20 +21,20 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_a2a683d10e3af0fb6cfa9dd8e3d9cbb3d40c4ff1df595ae881097309cbaf10ac = $this->env->getExtension("native_profiler");
-        $__internal_a2a683d10e3af0fb6cfa9dd8e3d9cbb3d40c4ff1df595ae881097309cbaf10ac->enter($__internal_a2a683d10e3af0fb6cfa9dd8e3d9cbb3d40c4ff1df595ae881097309cbaf10ac_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/myAccount.html.twig"));
+        $__internal_bde9930254834583e03b16d51f011e24f8fc6037f5961052700032550aba8864 = $this->env->getExtension("native_profiler");
+        $__internal_bde9930254834583e03b16d51f011e24f8fc6037f5961052700032550aba8864->enter($__internal_bde9930254834583e03b16d51f011e24f8fc6037f5961052700032550aba8864_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/myAccount.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_a2a683d10e3af0fb6cfa9dd8e3d9cbb3d40c4ff1df595ae881097309cbaf10ac->leave($__internal_a2a683d10e3af0fb6cfa9dd8e3d9cbb3d40c4ff1df595ae881097309cbaf10ac_prof);
+        $__internal_bde9930254834583e03b16d51f011e24f8fc6037f5961052700032550aba8864->leave($__internal_bde9930254834583e03b16d51f011e24f8fc6037f5961052700032550aba8864_prof);
 
     }
 
     // line 2
     public function block_body($context, array $blocks = array())
     {
-        $__internal_8ee249c61d61574048340900a24708c32dfb9b43e07119d8f13310ba79372352 = $this->env->getExtension("native_profiler");
-        $__internal_8ee249c61d61574048340900a24708c32dfb9b43e07119d8f13310ba79372352->enter($__internal_8ee249c61d61574048340900a24708c32dfb9b43e07119d8f13310ba79372352_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_c816191e19043c444fd8c2086b5ec67186e243d5502cc01d8d1ef901df4774cb = $this->env->getExtension("native_profiler");
+        $__internal_c816191e19043c444fd8c2086b5ec67186e243d5502cc01d8d1ef901df4774cb->enter($__internal_c816191e19043c444fd8c2086b5ec67186e243d5502cc01d8d1ef901df4774cb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 3
         echo "    <body>
@@ -230,7 +230,10 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
                     <p class=\"page-subtitle\">Posts added by the User</p>
                 </div>
                 <div class=\"col-md-4 col-sm-4 hidden-xs text-right\">
-                    <p class=\"page-icon\"><i class=\"fa fa-camera\"></i></p>
+                    <a href=\"";
+        // line 174
+        echo $this->env->getExtension('routing')->getPath("post_new");
+        echo "\" class=\"btn btn-default\">Create a Post</a>
                 </div>
             </div>
             <div class=\"row\">
@@ -319,7 +322,7 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
     </body>
 ";
         
-        $__internal_8ee249c61d61574048340900a24708c32dfb9b43e07119d8f13310ba79372352->leave($__internal_8ee249c61d61574048340900a24708c32dfb9b43e07119d8f13310ba79372352_prof);
+        $__internal_c816191e19043c444fd8c2086b5ec67186e243d5502cc01d8d1ef901df4774cb->leave($__internal_c816191e19043c444fd8c2086b5ec67186e243d5502cc01d8d1ef901df4774cb_prof);
 
     }
 
@@ -335,7 +338,7 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
 
     public function getDebugInfo()
     {
-        return array (  253 => 182,  244 => 180,  240 => 179,  201 => 143,  197 => 142,  182 => 130,  178 => 129,  174 => 128,  165 => 123,  153 => 114,  40 => 3,  34 => 2,  11 => 1,);
+        return array (  256 => 182,  247 => 180,  243 => 179,  235 => 174,  201 => 143,  197 => 142,  182 => 130,  178 => 129,  174 => 128,  165 => 123,  153 => 114,  40 => 3,  34 => 2,  11 => 1,);
     }
 }
 /* {% extends 'base.html.twig' %}*/
@@ -511,7 +514,7 @@ class __TwigTemplate_4651b7b5ec4344459a209954944376fd04d79fc50dcb8a3bcb05e7c1213
 /*                     <p class="page-subtitle">Posts added by the User</p>*/
 /*                 </div>*/
 /*                 <div class="col-md-4 col-sm-4 hidden-xs text-right">*/
-/*                     <p class="page-icon"><i class="fa fa-camera"></i></p>*/
+/*                     <a href="{{ path('post_new') }}" class="btn btn-default">Create a Post</a>*/
 /*                 </div>*/
 /*             </div>*/
 /*             <div class="row">*/

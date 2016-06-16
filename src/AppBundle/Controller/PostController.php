@@ -89,7 +89,7 @@ class PostController extends Controller
             $em->persist($post);
             $em->flush();
 
-            return $this->redirectToRoute('post_show', array('id' => $post->getId()));
+            return $this->redirectToRoute('myAccount', array('id' => $post->getId()));
         }
 
         return $this->render('post/new.html.twig', array(
@@ -147,7 +147,16 @@ class PostController extends Controller
      */
     public function postListAction(Request $request){
         $response='';
-        $productId=mt_rand(7,11);
+        //get the last id of the post table
+        /*$em=$this->getDoctrine()->getEntityManager();
+        $connection=$em->getConnection();
+        $statement = $connection->prepare("SELECT id FROM posts WHERE owner != :id");
+        $statement->bindValue('id',null);
+        $statement->execute();
+        $results = $statement->fetchAll();
+        $lastId=max($results);
+        var_dump($lastId);*/
+        $productId=mt_rand(7,12);
         $product = $this->getDoctrine()
             ->getRepository('AppBundle:Post')
             ->find($productId);

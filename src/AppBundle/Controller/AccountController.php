@@ -100,7 +100,7 @@ class AccountController extends Controller
             }
 
 
-            //return $this->redirectToRoute('account_show', array('id' => $account->getUserId()));
+            return $this->redirectToRoute('myAccount', array('id' => $account->getUserId()));
         }
 
         return $this->render('account/new.html.twig', array(

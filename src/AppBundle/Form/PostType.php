@@ -22,7 +22,7 @@ class PostType extends AbstractType
         $builder
             ->add('title',TextType::class, array('label'=>'Business Name:' , 'attr'=>array('class'=>"form-control",'placeholder'=>'Post Title' )))
             ->add('price',TextType::class, array('label'=>'Business Name:' , 'attr'=>array('class'=>"form-control",'placeholder'=>'price' )))
-            ->add('description',TextareaType::class,array('label'=>'Address:' , 'attr'=>array('class'=>"form-control",'rows'=>5,'placeholder'=>'Enter Address' )))
+            ->add('description',TextareaType::class,array('label'=>'Address:' , 'attr'=>array('class'=>"form-control",'rows'=>5,'placeholder'=>'Description' )))
             ->add('category',TextType::class, array('label'=>'Business Name:' , 'attr'=>array('class'=>"form-control",'placeholder'=>'Category' )))
             ->add('image',FileType::class)
         ;
