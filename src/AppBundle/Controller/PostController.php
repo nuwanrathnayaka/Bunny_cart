@@ -51,7 +51,6 @@ class PostController extends Controller
             $em = $this->getDoctrine()->getManager();
 
             try{
-                echo "nuwan";
                 $user = $this->getUser();
                 $currentUser=$user->getUsername();
                 var_dump($currentUser);
@@ -156,7 +155,7 @@ class PostController extends Controller
         $results = $statement->fetchAll();
         $lastId=max($results);
         var_dump($lastId);*/
-        $productId=mt_rand(7,12);
+        $productId=mt_rand(7,14);
         $product = $this->getDoctrine()
             ->getRepository('AppBundle:Post')
             ->find($productId);

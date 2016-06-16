@@ -4,13 +4,17 @@
     <h1>Post creation</h1>
 
     {{ form_start(form) }}
+    <h1 style="text-align: center">Create a New Post</h1>
+    <div style="width: 50%; float: left">
         {{ form_widget(form) }}
-        <input type="submit" value="Create" />
+        <br>
+        <input type="submit" class="btn btn-success" value="Create" />
+    </div>
     {{ form_end(form) }}
 
     <ul>
         <li>
-            <a href="{{ path('post_index') }}">Back to the list</a>
+            <a href="{{ path('my_account') }}">Back to the Account</a>
         </li>
     </ul>
 {% endblock %}
