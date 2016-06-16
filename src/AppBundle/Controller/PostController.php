@@ -89,7 +89,7 @@ class PostController extends Controller
             $em->persist($post);
             $em->flush();
 
-            return $this->redirectToRoute('myAccount', array('id' => $post->getId()));
+            return $this->redirectToRoute('my_account', array('id' => $post->getId()));
         }
 
         return $this->render('post/new.html.twig', array(

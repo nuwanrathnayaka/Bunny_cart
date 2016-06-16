@@ -19,8 +19,9 @@
                     <h3>Existing User</h3>
                     <div class="account-bottom">
                         <form action="{{ path("fos_user_security_check") }}" method="post">
-                        <input id="username" name="_username" placeholder="Email" type="text" tabindex="3" required="required">
-                        <input id="password" name="_password" placeholder="Password" type="password" tabindex="4" required="required">
+                            <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" >
+                        <input id="username" name="_username" placeholder="Email" type="text" tabindex="3" required>
+                        <input id="password" name="_password" placeholder="Password" type="password" tabindex="4" required>
                         <div class="address">
                             <a class="forgot" href="#">Forgot Your Password?</a>
                             <input type="submit" value="Login" id="_submit" name="_submit">
