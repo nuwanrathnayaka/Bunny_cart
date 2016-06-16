@@ -21,20 +21,20 @@ class __TwigTemplate_8c7798432cd58ac316e6d5ff2ecfa45467e2409eb0674c38130eebe3e58
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_086b25d1f25af2edc901210fa08fc65fee9efe0e8003b203401887ca0f8734e2 = $this->env->getExtension("native_profiler");
-        $__internal_086b25d1f25af2edc901210fa08fc65fee9efe0e8003b203401887ca0f8734e2->enter($__internal_086b25d1f25af2edc901210fa08fc65fee9efe0e8003b203401887ca0f8734e2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSUserBundle:Security:login.html.twig"));
+        $__internal_11b164b9d162c7118649d0ff2b3f61282154a64a627065645350195f91daa51e = $this->env->getExtension("native_profiler");
+        $__internal_11b164b9d162c7118649d0ff2b3f61282154a64a627065645350195f91daa51e->enter($__internal_11b164b9d162c7118649d0ff2b3f61282154a64a627065645350195f91daa51e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSUserBundle:Security:login.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_086b25d1f25af2edc901210fa08fc65fee9efe0e8003b203401887ca0f8734e2->leave($__internal_086b25d1f25af2edc901210fa08fc65fee9efe0e8003b203401887ca0f8734e2_prof);
+        $__internal_11b164b9d162c7118649d0ff2b3f61282154a64a627065645350195f91daa51e->leave($__internal_11b164b9d162c7118649d0ff2b3f61282154a64a627065645350195f91daa51e_prof);
 
     }
 
     // line 5
     public function block_fos_user_content($context, array $blocks = array())
     {
-        $__internal_afeb6f3cb5578fe3ec949cb8688c18c9874d77961638882fe0fab904957ae144 = $this->env->getExtension("native_profiler");
-        $__internal_afeb6f3cb5578fe3ec949cb8688c18c9874d77961638882fe0fab904957ae144->enter($__internal_afeb6f3cb5578fe3ec949cb8688c18c9874d77961638882fe0fab904957ae144_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "fos_user_content"));
+        $__internal_5ebd3af5218b615827ab2b39e3326249f1825132ffef93a55e949878e5412769 = $this->env->getExtension("native_profiler");
+        $__internal_5ebd3af5218b615827ab2b39e3326249f1825132ffef93a55e949878e5412769->enter($__internal_5ebd3af5218b615827ab2b39e3326249f1825132ffef93a55e949878e5412769_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "fos_user_content"));
 
         // line 6
         if ((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error"))) {
@@ -46,44 +46,45 @@ class __TwigTemplate_8c7798432cd58ac316e6d5ff2ecfa45467e2409eb0674c38130eebe3e58
         }
         // line 9
         echo "
-<form action=\"";
-        // line 10
+
+
+    <div class=\"account\">
+        <div class=\"container\">
+            <div class=\"account-top heading\">
+                <h2>ACCOUNT</h2>
+            </div>
+            <div class=\"account-main\">
+                <div class=\"col-md-6 account-left\">
+                    <h3>Existing User</h3>
+                    <div class=\"account-bottom\">
+                        <form action=\"";
+        // line 21
         echo $this->env->getExtension('routing')->getPath("fos_user_security_check");
         echo "\" method=\"post\">
-    <input type=\"hidden\" name=\"_csrf_token\" value=\"";
-        // line 11
-        echo twig_escape_filter($this->env, (isset($context["csrf_token"]) ? $context["csrf_token"] : $this->getContext($context, "csrf_token")), "html", null, true);
-        echo "\" />
-
-    <label for=\"username\">";
-        // line 13
-        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("security.login.username", array(), "FOSUserBundle"), "html", null, true);
-        echo "</label>
-    <input type=\"text\" id=\"username\" name=\"_username\" value=\"";
-        // line 14
-        echo twig_escape_filter($this->env, (isset($context["last_username"]) ? $context["last_username"] : $this->getContext($context, "last_username")), "html", null, true);
-        echo "\" required=\"required\" />
-
-    <label for=\"password\">";
-        // line 16
-        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("security.login.password", array(), "FOSUserBundle"), "html", null, true);
-        echo "</label>
-    <input type=\"password\" id=\"password\" name=\"_password\" required=\"required\" />
-
-    <input type=\"checkbox\" id=\"remember_me\" name=\"_remember_me\" value=\"on\" />
-    <label for=\"remember_me\">";
-        // line 20
-        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("security.login.remember_me", array(), "FOSUserBundle"), "html", null, true);
-        echo "</label>
-
-    <input type=\"submit\" id=\"_submit\" name=\"_submit\" value=\"";
-        // line 22
-        echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("security.login.submit", array(), "FOSUserBundle"), "html", null, true);
-        echo "\" />
-</form>
+                        <input id=\"username\" name=\"_username\" placeholder=\"Email\" type=\"text\" tabindex=\"3\" required=\"required\">
+                        <input id=\"password\" name=\"_password\" placeholder=\"Password\" type=\"password\" tabindex=\"4\" required=\"required\">
+                        <div class=\"address\">
+                            <a class=\"forgot\" href=\"#\">Forgot Your Password?</a>
+                            <input type=\"submit\" value=\"Login\" id=\"_submit\" name=\"_submit\">
+                        </div>
+                        </form>
+                    </div>
+                </div>
+                <div class=\"col-md-6 account-right account-left\">
+                    <h3>New User? Create an Account</h3>
+                    <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
+                    <a href=\"";
+        // line 34
+        echo $this->env->getExtension('routing')->getPath("fos_user_registration_register");
+        echo "\" >Create an Account</a>
+                </div>
+                <div class=\"clearfix\"></div>
+            </div>
+        </div>
+    </div>
 ";
         
-        $__internal_afeb6f3cb5578fe3ec949cb8688c18c9874d77961638882fe0fab904957ae144->leave($__internal_afeb6f3cb5578fe3ec949cb8688c18c9874d77961638882fe0fab904957ae144_prof);
+        $__internal_5ebd3af5218b615827ab2b39e3326249f1825132ffef93a55e949878e5412769->leave($__internal_5ebd3af5218b615827ab2b39e3326249f1825132ffef93a55e949878e5412769_prof);
 
     }
 
@@ -99,7 +100,7 @@ class __TwigTemplate_8c7798432cd58ac316e6d5ff2ecfa45467e2409eb0674c38130eebe3e58
 
     public function getDebugInfo()
     {
-        return array (  81 => 22,  76 => 20,  69 => 16,  64 => 14,  60 => 13,  55 => 11,  51 => 10,  48 => 9,  42 => 7,  40 => 6,  34 => 5,  11 => 1,);
+        return array (  78 => 34,  62 => 21,  48 => 9,  42 => 7,  40 => 6,  34 => 5,  11 => 1,);
     }
 }
 /* {% extends "FOSUserBundle::layout.html.twig" %}*/
@@ -111,19 +112,35 @@ class __TwigTemplate_8c7798432cd58ac316e6d5ff2ecfa45467e2409eb0674c38130eebe3e58
 /*     <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>*/
 /* {% endif %}*/
 /* */
-/* <form action="{{ path("fos_user_security_check") }}" method="post">*/
-/*     <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />*/
 /* */
-/*     <label for="username">{{ 'security.login.username'|trans }}</label>*/
-/*     <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />*/
 /* */
-/*     <label for="password">{{ 'security.login.password'|trans }}</label>*/
-/*     <input type="password" id="password" name="_password" required="required" />*/
-/* */
-/*     <input type="checkbox" id="remember_me" name="_remember_me" value="on" />*/
-/*     <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>*/
-/* */
-/*     <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />*/
-/* </form>*/
+/*     <div class="account">*/
+/*         <div class="container">*/
+/*             <div class="account-top heading">*/
+/*                 <h2>ACCOUNT</h2>*/
+/*             </div>*/
+/*             <div class="account-main">*/
+/*                 <div class="col-md-6 account-left">*/
+/*                     <h3>Existing User</h3>*/
+/*                     <div class="account-bottom">*/
+/*                         <form action="{{ path("fos_user_security_check") }}" method="post">*/
+/*                         <input id="username" name="_username" placeholder="Email" type="text" tabindex="3" required="required">*/
+/*                         <input id="password" name="_password" placeholder="Password" type="password" tabindex="4" required="required">*/
+/*                         <div class="address">*/
+/*                             <a class="forgot" href="#">Forgot Your Password?</a>*/
+/*                             <input type="submit" value="Login" id="_submit" name="_submit">*/
+/*                         </div>*/
+/*                         </form>*/
+/*                     </div>*/
+/*                 </div>*/
+/*                 <div class="col-md-6 account-right account-left">*/
+/*                     <h3>New User? Create an Account</h3>*/
+/*                     <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>*/
+/*                     <a href="{{ path("fos_user_registration_register") }}" >Create an Account</a>*/
+/*                 </div>*/
+/*                 <div class="clearfix"></div>*/
+/*             </div>*/
+/*         </div>*/
+/*     </div>*/
 /* {% endblock fos_user_content %}*/
 /* */

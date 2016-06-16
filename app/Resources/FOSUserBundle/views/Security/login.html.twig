@@ -7,18 +7,34 @@
     <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
 {% endif %}
 
-<form action="{{ path("fos_user_security_check") }}" method="post">
-    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
 
-    <label for="username">{{ 'security.login.username'|trans }}</label>
-    <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" class="form-control" placeholder="User Name" />
 
-    <label for="password">{{ 'security.login.password'|trans }}</label>
-    <input type="password" id="password" name="_password" required="required" class="form-control" placeholder="Password" />
-
-    <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
-    <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
-
-    <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" class="btn-default" />
-</form>
+    <div class="account">
+        <div class="container">
+            <div class="account-top heading">
+                <h2>ACCOUNT</h2>
+            </div>
+            <div class="account-main">
+                <div class="col-md-6 account-left">
+                    <h3>Existing User</h3>
+                    <div class="account-bottom">
+                        <form action="{{ path("fos_user_security_check") }}" method="post">
+                        <input id="username" name="_username" placeholder="Email" type="text" tabindex="3" required="required">
+                        <input id="password" name="_password" placeholder="Password" type="password" tabindex="4" required="required">
+                        <div class="address">
+                            <a class="forgot" href="#">Forgot Your Password?</a>
+                            <input type="submit" value="Login" id="_submit" name="_submit">
+                        </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 account-right account-left">
+                    <h3>New User? Create an Account</h3>
+                    <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
+                    <a href="{{ path("fos_user_registration_register") }}" >Create an Account</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
 {% endblock fos_user_content %}
